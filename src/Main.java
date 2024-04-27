@@ -33,6 +33,12 @@ class Calculator {
                 result = multiply(num1, num2);
                 System.out.println("Result: " + result);
                 break;
+            case 4:
+                result = divide(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            default:
+                System.out.println("Invalid operation number.");
         }
     }
 
@@ -46,6 +52,15 @@ class Calculator {
 
     static double multiply(double num1, double num2) {
         return num1 * num2;
+    }
+
+    static double divide(double num1, double num2) {
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            System.out.println("Cannot divide by zero.");
+            return 0;
+        }
     }
 
 }
