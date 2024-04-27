@@ -25,6 +25,14 @@ class Calculator {
                 result = add(num1, num2);
                 System.out.println("Result: " + result);
                 break;
+            case 2:
+                result = subtract(num1, num2);
+                System.out.println("Result: " + result);
+                break;
+            case 3:
+                result = multiply(num1, num2);
+                System.out.println("Result: " + result);
+                break;
         }
     }
 
@@ -35,4 +43,9 @@ class Calculator {
     static double subtract(double num1, double num2) {
         return num1 - num2;
     }
+
+    static double multiply(double num1, double num2) {
+        return num1 * num2;
+    }
+
 }
